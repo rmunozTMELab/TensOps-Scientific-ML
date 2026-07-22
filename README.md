@@ -19,10 +19,10 @@
   <a href="https://github.com/rmunozTMELab/TensOps-Scientific-ML/pulls">
     <img src="https://img.shields.io/github/issues-pr/rmunozTMELab/TensOps-Scientific-ML" alt="Pull Requests">
   </a>
-  <a href="https://github.com/rmunozTMELab/TensOps-Scientific-ML/blob/main/LICENSE">
+  <a href="https://github.com/rmunozTMELab/TensOps-Scientific-ML/blob/master/LICENSE">
     <img src="https://img.shields.io/github/license/rmunozTMELab/TensOps-Scientific-ML" alt="License">
   </a>
-  <a href="https://github.com/rmunozTMELab/TensOps-Scientific-ML/commits/main">
+  <a href="https://github.com/rmunozTMELab/TensOps-Scientific-ML/commits/master">
     <img src="https://img.shields.io/github/last-commit/rmunozTMELab/TensOps-Scientific-ML" alt="Last Commit">
   </a>
 </p>
@@ -113,13 +113,21 @@ tensopsciml-project/
 - Python 3.11+
 - PyTorch 2.1+
 - NumPy 1.24+
-- Sympy 1.12+
-- Scipy 1.10+
 
-### Using pip
+### From GitHub
+
+The package is not yet available on PyPI. Install it directly from the repository:
 
 ```bash
-python -m pip install tensopsciml
+pip install git+https://github.com/rmunozTMELab/TensOps-Scientific-ML.git
+```
+
+Or clone it and install locally:
+
+```bash
+git clone https://github.com/rmunozTMELab/TensOps-Scientific-ML.git
+cd TensOps-Scientific-ML
+pip install .
 ```
 
 ---
@@ -360,7 +368,7 @@ config = TensorConfig(
 
 ## 🧪 Testing
 
-Comprehensive test suite with 200+ tests covering:
+Comprehensive test suite with 400+ tests covering:
 - Tensor operations and algebra
 - Calculus operators
 - Finite difference kernels
@@ -439,7 +447,8 @@ Please ensure:
 
 ```bash
 # Clone repository
-git clone <repository-url>
+git clone https://github.com/rmunozTMELab/TensOps-Scientific-ML.git
+cd TensOps-Scientific-ML
 
 # Install in development mode
 pip install -e .
@@ -483,7 +492,7 @@ This project is released under the Apache License 2.0 (see the [LICENSE](LICENSE
 1. **Install TensOps**: Follow the [Installation](#-installation) section
 2. **Run Tutorials**: Start with `tensops_tutorial.ipynb` in `nb/tutorials/`
 3. **Explore Examples**: Check out application examples in `nb/examples/`
-5. **Run Tests**: Verify installation with `python -m pytest tests/ -v`
+4. **Run Tests**: Verify installation with `python -m pytest tests/ -v`
 
 ---
 
@@ -495,6 +504,23 @@ For issues, questions, or contributions, please refer to the project repository 
 
 ## 🎓 Citation
 
-If you use TensOps in your research, please cite this project appropriately. See your institution's guidelines for citing software in academic work.
+If you use TensOpSciML in your research, please cite it. This repository includes a
+[`CITATION.cff`](CITATION.cff) file, so you can use GitHub's **"Cite this repository"**
+button (top-right of the repo page) to export the citation in APA or BibTeX format.
+
+Alternatively, use the following BibTeX entry:
+
+```bibtex
+@software{tensopsciml2026,
+  author  = {Mu\~{n}oz-Sierra, Rub\'{e}n and Ayensa-Jim\'{e}nez, Jacobo and Doblar\'{e}, Manuel},
+  title   = {{TensOpSciML: A Python-Based Framework for Tensor Calculus and
+             Differential Operators with Application in Scientific Machine Learning}},
+  year    = {2026},
+  version = {1.0.0},
+  url     = {https://github.com/rmunozTMELab/TensOps-Scientific-ML},
+  note    = {Tissue Microenvironment Lab (TME Lab), Arag\'{o}n Institute for
+             Engineering Research (I3A), University of Zaragoza}
+}
+```
 
 ---

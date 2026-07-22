@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "TensOpSciML: A Python-Based Framework for Tensor Calculus and Differential Operators with Application in Scientific Machine Learning"
+abstract: >-
+  A unified Python framework for tensor calculus and differential operators for
+  data-driven applications, providing convolution-based derivative operators and
+  metadata-enriched tensors for Scientific Machine Learning.
+type: software
+authors:
+  - given-names: Rubén
+    family-names: Muñoz-Sierra
+    email: rmunoz@unizar.es
+    affiliation: "Tissue Microenvironment Lab (TME Lab), Aragón Institute for Engineering Research (I3A), University of Zaragoza"
+  - given-names: Jacobo
+    family-names: Ayensa-Jiménez
+    email: jacobo.ayensa@upm.es
+    affiliation: "Universidad Politécnica de Madrid"
+  - given-names: Manuel
+    family-names: Doblaré
+    email: mdoblare@unizar.es
+    affiliation: "Tissue Microenvironment Lab (TME Lab), Aragón Institute for Engineering Research (I3A), University of Zaragoza"
+version: 1.0.0
+date-released: "2026-07-22"
+license: Apache-2.0
+repository-code: "https://github.com/rmunozTMELab/TensOps-Scientific-ML"
+url: "https://github.com/rmunozTMELab/TensOps-Scientific-ML"
+keywords:
+  - tensor calculus
+  - differential operators
+  - scientific machine learning
+  - physics-informed neural networks
+  - pytorch
