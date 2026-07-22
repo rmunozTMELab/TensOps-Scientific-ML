@@ -1,0 +1,10 @@
+include README.md
+include LICENSE
+include pyproject.toml
+
+# Keep notebooks, examples and tests out of the source distribution
+global-exclude *.ipynb
+global-exclude *.yml
+global-exclude *.yaml
+prune nb
+prune tests

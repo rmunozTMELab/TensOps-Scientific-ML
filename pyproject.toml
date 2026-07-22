@@ -1,0 +1,72 @@
+[build-system]
+requires = ["setuptools>=65", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tensopsciml"
+version = "1.0.0"
+description = "TensOpSciML: A Python-Based Framework for Tensor Calculus and Differential Operators with Application in Scientific Machine Learning."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "Apache-2.0" }
+authors = [
+    { name = "Rubén Muñoz-Sierra", email = "rmunoz@unizar.es" },
+    { name = "Jacobo Ayensa-Jiménez", email = "jacobo.ayensa@upm.es" },
+    { name = "Manuel Doblaré", email = "mdoblare@unizar.es" },
+]
+keywords = ["tensor calculus", "machine learning", "sciml", "physics", "pytorch"]
+
+dependencies = [
+    "numpy>=1.24",
+    "sympy>=1.12",
+    "torch>=2.1",
+    "scipy>=1.10",
+]
+
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+[project.urls]
+Homepage = "https://github.com/rmunozTMELab/TensOps-Scientific-ML"
+Documentation = "https://github.com/rmunozTMELab/TensOps-Scientific-ML"
+Repository = "https://github.com/rmunozTMELab/TensOps-Scientific-ML"
+
+
+[project.optional-dependencies]
+viz = [
+    "matplotlib>=3.7",
+    "seaborn",
+]
+notebooks = [
+    "notebook",
+    "ipywidgets",
+]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "black",
+    "ruff",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["tensopsciml*"]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -vv"
+testpaths = [
+    "tests",
+]
+pythonpath = [
+    "src"
+]
