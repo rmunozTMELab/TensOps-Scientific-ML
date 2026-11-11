@@ -516,7 +516,7 @@ Alternatively, use the following BibTeX entry:
   title   = {{TensOpSciML: A Python-Based Framework for Tensor Calculus and
              Differential Operators with Application in Scientific Machine Learning}},
   year    = {2026},
-  version = {1.0.0},
+  version = {1.0.1},
   url     = {https://github.com/rmunozTMELab/TensOps-Scientific-ML},
   note    = {Tissue Microenvironment Lab (TME Lab), Arag\'{o}n Institute for
              Engineering Research (I3A), University of Zaragoza}

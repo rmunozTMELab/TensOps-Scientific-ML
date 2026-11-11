@@ -46,15 +46,15 @@ def m1(f: TensOps) -> TensOps:
 
     if f.domain == 1:
         kernel = average.one_dimension()[0]
-        kernel = kernel.to(values.device)
+        kernel = kernel.to(device=values.device, dtype=values.dtype)
         averaged_values = backend.conv1d(values, kernel, stride=1, padding="valid")
     elif f.domain == 2:
         kernel = average.two_dimensions()[0]
-        kernel = kernel.to(values.device)
+        kernel = kernel.to(device=values.device, dtype=values.dtype)
         averaged_values = backend.conv2d(values, kernel, stride=1, padding="valid")
     elif f.domain == 3:
         kernel = average.three_dimensions()[0]
-        kernel = kernel.to(values.device)
+        kernel = kernel.to(device=values.device, dtype=values.dtype)
         averaged_values = backend.conv3d(values, kernel, stride=1, padding="valid")
     else:
         raise ValueError(f"Unsupported space dimension: {f.domain}.")
@@ -107,11 +107,11 @@ def m2(f: TensOps) -> TensOps:
             "Cannot average along the second dimension for a 1D domain.")
     elif f.domain == 2:
         kernel = average.two_dimensions()[1]
-        kernel = kernel.to(values.device)
+        kernel = kernel.to(device=values.device, dtype=values.dtype)
         averaged_values = backend.conv2d(values, kernel, stride=1, padding="valid")
     elif f.domain == 3:
         kernel = average.three_dimensions()[1]
-        kernel = kernel.to(values.device)
+        kernel = kernel.to(device=values.device, dtype=values.dtype)
         averaged_values = backend.conv3d(values, kernel, stride=1, padding="valid")
     else:
         raise ValueError(f"Unsupported space dimension: {f.domain}.")
@@ -167,7 +167,7 @@ def m3(f: TensOps) -> TensOps:
             "Cannot average along the third dimension for a 2D domain.")
     elif f.domain == 3:
         kernel = average.three_dimensions()[2]
-        kernel = kernel.to(values.device)
+        kernel = kernel.to(device=values.device, dtype=values.dtype)
         averaged_values = backend.conv3d(values, kernel, stride=1, padding="valid")
     else:
         raise ValueError(f"Unsupported space dimension: {f.domain}.")

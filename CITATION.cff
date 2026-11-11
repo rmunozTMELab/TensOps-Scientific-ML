@@ -19,8 +19,8 @@ authors:
     family-names: Doblaré
     email: mdoblare@unizar.es
     affiliation: "Tissue Microenvironment Lab (TME Lab), Aragón Institute for Engineering Research (I3A), University of Zaragoza"
-version: 1.0.0
-date-released: "2026-07-22"
+version: 1.0.1
+date-released: "2026-11-11"
 license: Apache-2.0
 repository-code: "https://github.com/rmunozTMELab/TensOps-Scientific-ML"
 url: "https://github.com/rmunozTMELab/TensOps-Scientific-ML"
